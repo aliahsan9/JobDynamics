@@ -1,0 +1,21 @@
+<div class="container mt-5" *ngIf="job">
+
+<h2 class="mb-4">{{job.title}}</h2>
+
+<p>
+<strong>Company:</strong> {{job.company}}
+</p>
+
+<p>
+<strong>Location:</strong> {{job.location}}
+</p>
+
+<p>
+<strong>Last Date:</strong> {{job.lastDate}}
+</p>
+
+<hr>
+
+ <markdown [src]="job.file"></markdown>
+
+</div>

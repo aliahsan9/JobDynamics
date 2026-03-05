@@ -1,0 +1,37 @@
+.footer{
+background:#0d1117;
+color:#fff;
+font-size:14px;
+}
+
+.footer h3, .footer h5{
+color:#fff;
+}
+
+.footer-links li{
+margin-bottom:10px;
+}
+
+.footer-links a{
+color:#adb5bd;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:#ffc107;
+text-decoration:underline;
+}
+
+.footer-divider{
+border-color:#343a40;
+}
+
+.trust-stars{
+font-size:18px;
+color:#ffc107;
+}
+
+.trust-stars .star:last-child{
+color:#6c757d; /* blur/starred effect */
+}

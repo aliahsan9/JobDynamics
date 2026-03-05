@@ -1,0 +1,44 @@
+.contact-hero{
+background:linear-gradient(135deg,#0d6efd,#003a8c);
+color:white;
+padding:100px 20px;
+}
+
+.contact-form{
+background:white;
+padding:35px;
+border-radius:12px;
+}
+
+.contact-info{
+background:white;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.trust-badges{
+background:#fff3cd;
+padding:25px;
+border-radius:12px;
+}
+
+.trust-badges ul{
+padding-left:18px;
+}
+
+.map-section{
+background:#f8f9fa;
+padding:70px 0;
+}
+
+.map-box{
+border-radius:12px;
+overflow:hidden;
+}
+
+.contact-cta{
+background:#212529;
+color:white;
+padding:80px 20px;
+}

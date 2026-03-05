@@ -1,0 +1,14 @@
+.policy-hero{
+background:linear-gradient(135deg,#0d6efd,#003a8c);
+color:white;
+padding:80px 20px;
+}
+
+.policy-content{
+max-width:900px;
+}
+
+.policy-content h2{
+margin-top:30px;
+font-weight:600;
+}
