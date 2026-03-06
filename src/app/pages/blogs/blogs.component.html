@@ -1,1 +1,23 @@
-<p>blogs works!</p>
+<div class="blogs-page container py-5">
+
+  <h1 class="page-title text-center mb-5">
+    Career Advice & Job Blogs
+  </h1>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let blog of blogs">
+      <div class="blog-card shadow-sm">
+        <div class="blog-content">
+          <h3>{{ blog.title }}</h3>
+          <p class="blog-desc">
+            {{ blog.description || 'Read this guide to improve your career and job preparation.' }}
+          </p>
+          <a [routerLink]="['/blog', blog.slug]" class="btn read-btn">
+            Read Article
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

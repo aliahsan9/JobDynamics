@@ -26,5 +26,17 @@ export const routes: Routes = [
 { path:'contact', component: ContactComponent },
 {path:'privacy-policy',component:PrivacyPolicyComponent},
 {path:'disclaimer',component:DisclaimerComponent},
-{path:'terms',component:TermsComponent}
+{path:'terms',component:TermsComponent},
+
+{
+path:'blogs',
+loadComponent:()=>import('./pages/blogs/blogs.component')
+.then(m=>m.BlogsComponent)
+},
+
+{
+path:'blog/:slug',
+loadComponent:()=>import('./pages/blog-detail/blog-detail.component')
+.then(m=>m.BlogDetailComponent)
+}
 ];

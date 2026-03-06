@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
 @Component({
 selector: 'app-jobs',
 imports:[RouterModule, CommonModule],
-templateUrl: './jobs.component.html'
+templateUrl: './jobs.component.html',
+styleUrl:'./jobs.component.css'
 })
 export class JobsComponent {
 

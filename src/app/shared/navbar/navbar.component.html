@@ -1,41 +1,83 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
+<nav class="navbar-main">
 
-    <a class="navbar-brand fw-bold" routerLink="/">
+  <div class="container nav-wrapper">
+
+    <!-- Logo -->
+    <a class="logo" routerLink="/">
       JobDynamics
     </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
 
-    <div id="nav" class="collapse navbar-collapse">
+      <li>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+      </li>
 
-      <ul class="navbar-nav ms-auto">
+      <li>
+        <a routerLink="/jobs" routerLinkActive="active">Jobs</a>
+      </li>
 
-        <li class="nav-item">
-          <a routerLink="/" class="nav-link">Home</a>
-        </li>
+      <li>
+        <a routerLink="/blogs" routerLinkActive="active">Blogs</a>
+      </li>
 
-        <li class="nav-item">
-          <a routerLink="/jobs" class="nav-link">Jobs</a>
-        </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+      </li>
 
-        <li class="nav-item">
-          <a routerLink="/blogs" class="nav-link">Blogs</a>
-        </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+      <li>
+        <a routerLink="/privacy-policy" routerLinkActive="active">Privacy</a>
+      </li>
+      <li>
+        <a routerLink="/disclaimer" routerLinkActive="active">Disclaimer</a>
+      </li>
+      <li>
+        <a routerLink="/terms" routerLinkActive="active">Terms</a>
+      </li>
 
-        <li class="nav-item">
-          <a routerLink="/about" class="nav-link">About</a>
-        </li>
+      <li>
+        <a routerLink="/jobs" class="post-btn">
+          Explore Jobs
+        </a>
+      </li>
 
-        <li class="nav-item">
-          <a routerLink="/contact" class="nav-link">Contact</a>
-        </li>
+    </ul>
 
-      </ul>
+    <!-- Hamburger -->
+    <div class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen">
+
+      <span></span>
+      <span></span>
+      <span></span>
 
     </div>
 
   </div>
+
 </nav>
+
+
+<!-- MOBILE SIDEBAR -->
+
+<div class="mobile-sidebar" [class.open]="menuOpen">
+
+  <a routerLink="/" (click)="closeMenu()">Home</a>
+  <a routerLink="/jobs" (click)="closeMenu()">Jobs</a>
+  <a routerLink="/blogs" (click)="closeMenu()">Blogs</a>
+  <a routerLink="/about" (click)="closeMenu()">About</a>
+  <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  <a routerLink="/privacy-policy" (click)="closeMenu()">Privacy</a>
+  <a routerLink="/disclaimer" (click)="closeMenu()">Disclaimer</a>
+  <a routerLink="/terms" (click)="closeMenu()">Terms</a>
+
+  <a routerLink="/jobs" class="mobile-cta" (click)="closeMenu()">
+    Explore Jobs
+  </a>
+
+</div>
+
+<div class="sidebar-overlay" *ngIf="menuOpen" (click)="closeMenu()"></div>

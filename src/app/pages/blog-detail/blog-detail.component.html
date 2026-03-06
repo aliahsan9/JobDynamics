@@ -1,1 +1,31 @@
-<p>blog-detail works!</p>
+<div class="blog-detail-wrapper">
+
+  <div class="container">
+
+    <!-- Loading -->
+    <div *ngIf="loading" class="loading">
+      Loading article...
+    </div>
+
+    <!-- Blog Content -->
+    <div *ngIf="!loading && blog" class="blog-container shadow-sm">
+
+      <h1 class="blog-title">{{ blog.title }}</h1>
+
+      <div class="blog-divider"></div>
+
+      <div class="blog-content">
+         <markdown *ngIf="filePath" [src]="filePath"></markdown>
+      </div>
+
+    </div>
+
+    <!-- Not Found -->
+    <div *ngIf="!loading && !blog" class="not-found">
+      <h2>Blog Not Found</h2>
+      <p>The article you are looking for does not exist.</p>
+    </div>
+
+  </div>
+
+</div>

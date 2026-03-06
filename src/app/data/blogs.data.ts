@@ -11,5 +11,4 @@ title:'Top IT Jobs in Pakistan',
 slug:'top-it-jobs-pakistan',
 file:'assets/blogs/top-it-jobs.md'
 }
-
 ];

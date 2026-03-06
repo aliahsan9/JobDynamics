@@ -13,4 +13,4 @@
 
 ## How to Apply
 
-Apply online at the official website.
+Apply online at the official website. 

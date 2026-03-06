@@ -1,38 +1,81 @@
-<!-- HERO SECTION -->
-<section class="hero-section text-center text-white">
+<!-- HERO -->
+<section class="hero">
+
+  <div class="container text-center hero-content">
+
+    <span class="badge badge-soft mb-3">
+      🇵🇰 Pakistan's Growing Job Platform
+    </span>
+
+    <h1 class="hero-title">
+      Find Your <span>Dream Job</span> in Pakistan
+    </h1>
+
+    <p class="hero-subtitle">
+      Discover daily updated government & private jobs across Pakistan.
+      Trusted by thousands of job seekers.
+    </p>
+
+    <div class="hero-buttons">
+      <a routerLink="/jobs" class="btn btn-primary btn-lg">
+        Browse Jobs
+      </a>
+
+      <a routerLink="/blogs" class="btn btn-outline-light btn-lg">
+        Career Guides
+      </a>
+    </div>
+
+    <!-- Quick Categories -->
+    <div class="quick-tags">
+
+      <span>Government</span>
+      <span>IT</span>
+      <span>Banking</span>
+      <span>Engineering</span>
+      <span>Remote</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats-section">
 
 <div class="container">
 
-<h1 class="display-4 fw-bold">
-Find Latest Jobs in Pakistan
-</h1>
+<div class="row g-4 text-center">
 
-<p class="lead mt-3">
-Daily updated government and private jobs across Pakistan.
-</p>
-
-<div class="search-box mt-4">
-
-<input
-type="text"
-class="form-control search-input"
-placeholder="Search jobs, companies or keywords">
-
-<button class="btn btn-warning fw-bold">
-Search Jobs
-</button>
-
+<div class="col-md-3">
+<div class="stat-box">
+<h2>500+</h2>
+<p>Jobs Listed</p>
+</div>
 </div>
 
-<div class="trust-stars mt-4">
+<div class="col-md-3">
+<div class="stat-box">
+<h2>50+</h2>
+<p>Companies</p>
+</div>
+</div>
 
-<span class="stars">
-★★★★★
-</span>
+<div class="col-md-3">
+<div class="stat-box">
+<h2>10K+</h2>
+<p>Monthly Users</p>
+</div>
+</div>
 
-<span class="ms-2 trust-text">
-Trusted by thousands of job seekers
-</span>
+<div class="col-md-3">
+<div class="stat-box">
+<h2>Daily</h2>
+<p>Updates</p>
+</div>
+</div>
 
 </div>
 
@@ -41,149 +84,74 @@ Trusted by thousands of job seekers
 </section>
 
 
-
-<!-- FEATURED JOBS -->
+<!-- JOB LIST -->
 <section class="container my-5">
 
-<h2 class="section-title text-center mb-4">
-Latest Featured Jobs
-</h2>
+<div class="section-header">
 
-<div class="row g-4">
-
-<div class="col-md-6 col-lg-4">
-
-<div class="job-card shadow-sm">
-
-<h5>PPSC Jobs March 2026</h5>
-
-<p class="job-company">
-Punjab Public Service Commission
-</p>
-
-<p class="job-location">
-Lahore, Pakistan
-</p>
-
-<a routerLink="/jobs" class="btn btn-primary btn-sm">
-View Details
-</a>
+<h2>Latest Jobs</h2>
+<a routerLink="/jobs">View All</a>
 
 </div>
 
-</div>
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="job-card shadow-sm">
-
-<h5>Software Engineer</h5>
-
-<p class="job-company">
-Systems Limited
-</p>
-
-<p class="job-location">
-Lahore
-</p>
-
-<a routerLink="/jobs" class="btn btn-primary btn-sm">
-View Details
-</a>
-
-</div>
-
-</div>
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="job-card shadow-sm">
-
-<h5>Banking Officer Jobs</h5>
-
-<p class="job-company">
-Bank of Punjab
-</p>
-
-<p class="job-location">
-Pakistan
-</p>
-
-<a routerLink="/jobs" class="btn btn-primary btn-sm">
-View Details
-</a>
-
-</div>
-
-</div>
-
-</div>
+<app-jobs></app-jobs>
 
 </section>
 
 
-
-<!-- TRUST SECTION -->
-<section class="trust-section text-center">
+<!-- WHY TRUST -->
+<section class="features">
 
 <div class="container">
 
-<h2 class="fw-bold mb-3">
-Why Job Seekers Trust JobDynamics
+<h2 class="section-title text-center">
+Why People Love JobDynamics
 </h2>
 
-<p class="mb-5">
-We provide authentic job listings from verified sources across Pakistan.
-</p>
-
-<div class="row g-4">
+<div class="row g-4 mt-4">
 
 <div class="col-md-4">
 
-<div class="trust-box">
+<div class="feature-card">
 
-<div class="icon">✔</div>
+<div class="feature-icon">✔</div>
 
-<h5>Authentic Jobs</h5>
+<h5>Verified Jobs</h5>
 
 <p>
-All jobs are collected from official sources and verified platforms.
+All jobs come from authentic government and company sources.
 </p>
 
 </div>
 
 </div>
 
-
 <div class="col-md-4">
 
-<div class="trust-box">
+<div class="feature-card">
 
-<div class="icon">⚡</div>
+<div class="feature-icon">⚡</div>
 
 <h5>Daily Updates</h5>
 
 <p>
-New jobs are added every day so you never miss an opportunity.
+We update jobs every day so you never miss opportunities.
 </p>
 
 </div>
 
 </div>
 
-
 <div class="col-md-4">
 
-<div class="trust-box">
+<div class="feature-card">
 
-<div class="icon">⭐</div>
+<div class="feature-icon">⭐</div>
 
 <h5>Trusted Platform</h5>
 
 <p>
-Thousands of job seekers visit JobDynamics to find careers.
+Thousands of job seekers trust JobDynamics.
 </p>
 
 </div>
@@ -197,44 +165,31 @@ Thousands of job seekers visit JobDynamics to find careers.
 </section>
 
 
+<!-- CATEGORIES -->
+<section class="categories">
 
-<!-- JOB CATEGORIES -->
-<section class="container my-5">
+<div class="container">
 
-<h2 class="section-title text-center mb-4">
+<h2 class="text-center mb-5">
 Popular Job Categories
 </h2>
 
 <div class="row g-4">
 
 <div class="col-md-3">
-
-<div class="category-card">
-Government Jobs
-</div>
-
+<div class="category-card">Government</div>
 </div>
 
 <div class="col-md-3">
-
-<div class="category-card">
-IT Jobs
-</div>
-
+<div class="category-card">IT & Software</div>
 </div>
 
 <div class="col-md-3">
-
-<div class="category-card">
-Banking Jobs
-</div>
-
+<div class="category-card">Banking</div>
 </div>
 
 <div class="col-md-3">
-
-<div class="category-card">
-Engineering Jobs
+<div class="category-card">Engineering</div>
 </div>
 
 </div>
@@ -244,14 +199,13 @@ Engineering Jobs
 </section>
 
 
-
-<!-- BLOG SECTION -->
-<section class="blog-section">
+<!-- BLOG -->
+<section class="blog">
 
 <div class="container">
 
 <h2 class="text-center mb-5">
-Career Advice & Job Guides
+Career Advice
 </h2>
 
 <div class="row g-4">
@@ -260,59 +214,45 @@ Career Advice & Job Guides
 
 <div class="blog-card">
 
-<h5>
-How to Prepare for Government Jobs
-</h5>
+<h5>How to Prepare for Government Jobs</h5>
 
 <p>
-A complete guide to preparing for competitive exams and securing government jobs.
+Tips to prepare for FPSC, PPSC and other exams.
 </p>
 
-<a routerLink="/blogs" class="btn btn-outline-primary btn-sm">
-Read Article
-</a>
+<a routerLink="/blogs">Read Article →</a>
 
 </div>
 
 </div>
-
 
 <div class="col-md-4">
 
 <div class="blog-card">
 
-<h5>
-Best IT Jobs in Pakistan
-</h5>
+<h5>Top IT Careers in Pakistan</h5>
 
 <p>
-Explore the highest paying IT career opportunities in Pakistan.
+Explore the fastest growing tech careers.
 </p>
 
-<a routerLink="/blogs" class="btn btn-outline-primary btn-sm">
-Read Article
-</a>
+<a routerLink="/blogs">Read Article →</a>
 
 </div>
 
 </div>
-
 
 <div class="col-md-4">
 
 <div class="blog-card">
 
-<h5>
-How to Create a Professional Resume
-</h5>
+<h5>How to Write a Resume</h5>
 
 <p>
-Tips to write a resume that gets noticed by recruiters.
+Create a resume recruiters actually read.
 </p>
 
-<a routerLink="/blogs" class="btn btn-outline-primary btn-sm">
-Read Article
-</a>
+<a routerLink="/blogs">Read Article →</a>
 
 </div>
 
@@ -325,21 +265,18 @@ Read Article
 </section>
 
 
+<!-- CTA -->
+<section class="cta">
 
-<!-- CALL TO ACTION -->
-<section class="cta-section text-center">
+<div class="container text-center">
 
-<div class="container">
+<h2>Start Your Career Journey Today</h2>
 
-<h2 class="fw-bold">
-Start Your Career Journey Today
-</h2>
-
-<p class="mt-3">
-Browse hundreds of jobs updated daily.
+<p>
+Explore hundreds of jobs updated daily.
 </p>
 
-<a routerLink="/jobs" class="btn btn-warning btn-lg mt-3">
+<a routerLink="/jobs" class="btn btn-warning btn-lg">
 Explore Jobs
 </a>
 
